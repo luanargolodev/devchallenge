@@ -27,6 +27,7 @@ a {
   display: flex;
   justify-content: space-between;
   padding-top: 50px;
+  flex-wrap: wrap;
 }
 
 .header-nav {
@@ -77,4 +78,26 @@ a {
 
 .main-imagem {
   margin-top: 100px;
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding-top: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main {
+    align-items: center;
+  }
+  .main-conteudo h1,
+  .main-conteudo p {
+    margin-top: 30px;
+    margin-left: 15px;
+  }
+  .main-conteudo a.main-botao {
+    margin-top: 30px;
+    margin-left: 15px;
+    display: block;
+    width: 50px;
+  }
 }
